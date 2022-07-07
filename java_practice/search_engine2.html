@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>search Engine</h1>
+    <form name="">
+<textarea name="content" id="" cols="30" rows="10" placeholder="Put your content"></textarea>
+<br>
+<input type="text" name="searchWord" placeholder="Enter your Word">
+<br>
+<button type="button" onclick="findWord()">Search</button>
+</form>
+<script>
+    function findWord(){
+        
+        var content = document.search.content.value;
+        content = content.toLowerCase();
+        var searchWord = document.search.searchWord.value;
+        searchWord=toLowerCase();
+        var result=content.search(searchWord);
+        if(result==-1){
+            alert("do
+            
+            yujh")
+        }
+    }
+</script>
+</body>
+</html>

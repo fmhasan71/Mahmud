@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+	<form name="login">
+		<input type="text" name="email" placeholder="Enter valid email"><br>
+		<input type="password" name="password" placeholder="Enter password"><br>
+		<input type="button" name="submit" value="login" onclick="validate()">
+
+	</form>
+		<script>
+			function validate(){
+				var email  = document.login.email.value;
+				var pss = document.login.password.value.length;
+				var (pattern);
+				var stutus=false;
+				if(pattern==-1){
+					alert("Email address is invalid");
+
+				}else{
+					status = true;
+				}
+				if(pass<6){
+					alert("Password must be 6 charecter");
+					return false;
+
+				}else{
+					status==true;
+				}if(status==true){
+					alert("All data are validted");
+				}
+		</script>
+	
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="result">
+<input type="text" name="mcq" placeholder="Enter MCQ Number"><br>
+<input type="text" name="desicriptive" placeholder="Enter Desicriptive Number"><br>
+<input type="text" name="evidence" placeholder="Enter Evidence Number"><br>
+<input type="button" onclick="passfail" value="CHECK">
+    </form>
+
+    <script>
+        function passfail(){
+            var mcq =document.result.mcq.value;
+            var desicriptive =document.result.desicriptive.value;
+            var evidence =document.result.evidence.value;
+            
+            var output="";
+          
+            if(mcq>=80 && desicriptive>=60 && evidence>=60){
+                output += "You have passed";
+            }else{
+                output += "You have failed"
+            }
+            document.getElementById("viwresult").innerHTML =output;
+        }
+    </script>
+</body>
+</html>
